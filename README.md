@@ -36,9 +36,9 @@ cd revenda-carros
 
 python -m venv venv
 
-# Ativar no Windows
+ Ativar no Windows
 venv\Scripts\activate
 
-# Ativar no Linux/Mac
+ Ativar no Linux/Mac
 source venv/bin/activate
 
