@@ -29,6 +29,7 @@ O objetivo é oferecer uma plataforma simples, intuitiva e eficiente para cadast
 ### 1. Clonar o repositório
 
 git clone https://github.com/seu-usuario/revenda-carros.git
+
 cd revenda-carros
 
 ### 2. Criar e ativar o ambiente virtual
