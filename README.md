@@ -11,7 +11,6 @@ O objetivo é oferecer uma plataforma simples, intuitiva e eficiente para cadast
 - Listagem de veículos com informações detalhadas (nome, ano, preço, observações etc.)  
 - Filtros e pesquisa para facilitar a navegação  
 - Interface responsiva e amigável  
-- Painel administrativo do Django para gestão completa  
 
 ------------------------------------------------------------------------------------------------------------------------
 
