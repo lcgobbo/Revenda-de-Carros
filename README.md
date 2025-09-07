@@ -42,3 +42,9 @@ venv\Scripts\activate
  Ativar no Linux/Mac
 source venv/bin/activate
 
+### 3. Colocar o servidor no ar (localmente)
+
+python manage.py runserver
+
+### 4. Acessar o site pela url gerada 
+
