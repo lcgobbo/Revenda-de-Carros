@@ -48,3 +48,7 @@ python manage.py runserver
 
 ### 4. Acessar o site pela url gerada 
 
+------------------------------------------------------------------------------------------------------------------------
+
+### Obs: Aplicação ainda em desenvolvimento!
+
