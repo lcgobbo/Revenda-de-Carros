@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from cars.models import Car
 from cars.forms import CarModelForm
 from django.views import View
+from django.views.generic import ListView
 
 
 class CarsView(View):
@@ -18,6 +19,12 @@ class CarsView(View):
             'cars.html',          
             {'cars': cars }     
         )
+    
+    class CarsListView(ListView):
+        model = Car
+        template_name = 'cars.html'
+        context_object_name = 'cars'
+        
 
 
 class NewCarView(View):
