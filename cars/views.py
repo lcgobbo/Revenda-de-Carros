@@ -20,11 +20,12 @@ class CarsView(View):
             {'cars': cars }     
         )
     
+    
     class CarsListView(ListView):
         model = Car
         template_name = 'cars.html'
         context_object_name = 'cars'
-        
+
 
 
 class NewCarView(View):
