@@ -3,22 +3,6 @@ from cars.models import Car
 from cars.forms import CarModelForm
 from django.views import View
 from django.views.generic import ListView
-
-
-class CarsView(View):
-    
-    def get(self, request):
-        cars = Car.objects.all().order_by('brand__name', 'model')
-        search = request.GET.get('search')
-        
-        if search:
-            cars = Car.objects.filter(model__icontains=search)
-        
-        return render(
-            request,
-            'cars.html',          
-            {'cars': cars }     
-        )
     
     
 class CarsListView(ListView):
