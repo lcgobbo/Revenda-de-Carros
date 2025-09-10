@@ -21,11 +21,14 @@ class CarsView(View):
         )
     
     
-    class CarsListView(ListView):
-        model = Car
-        template_name = 'cars.html'
-        context_object_name = 'cars'
+class CarsListView(ListView):
+    model = Car
+    template_name = 'cars.html'
+    context_object_name = 'cars'
 
+    def get_queryset(self):
+        cars = super().get_queryset().order_by('brand__name', 'model')
+        search = self.request.GET.get('search')
 
 
 class NewCarView(View):
